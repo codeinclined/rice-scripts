@@ -5,6 +5,10 @@
 #   Uses rofi or dmenu (if rofi is not found) to select a LastPass account and
 #   copy its password to the X clipboard using xclip.
 #
+#   If you add any command line arguments, then this script will suppress
+#   the final information message telling the user that the password has
+#   been copied to the clipboard.
+#
 # Convenience / security note:
 #   This script does not pass --trust to "lpass login". To prevent lpass-cli
 #   from asking you for a second form of authentication, please run "lpass login
