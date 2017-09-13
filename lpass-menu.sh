@@ -21,7 +21,7 @@
 #   - lpass-cli
 #   - rofi or dmenu (prefers rofi by default if it is found)
 #   - zenity
-#   - xclip
+#   - Clipboard program compatible with "lpass show -c" (such as xclip)
 ################################################################################
 # Copyright 2017 Joshua Taylor <taylor.joshua88@gmail.com>
 #
