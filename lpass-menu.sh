@@ -53,7 +53,7 @@ else
     MENU_CMD="rofi"
     MENU_ARG="-dmenu"
 fi
-echo $MENU_CMD
+
 lpass status
 
 if [ $? -ne 0 ]; then
