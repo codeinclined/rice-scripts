@@ -48,10 +48,10 @@ rofi -version &> /dev/null
 
 if [ $? -ne 0 ]; then
     MENU_CMD="dmenu"
-    MENU_ARG=""
+    MENU_ARGS=
 else
     MENU_CMD="rofi"
-    MENU_ARG="-dmenu"
+    MENU_ARGS=("-dmenu" "-p lpass:")
 fi
 
 lpass status
@@ -71,7 +71,7 @@ if [ $? -ne 0 ]; then
     fi
 fi
 
-ROFI_SELECTION="$(lpass ls --format '•%an' | grep '•' | tr '•' '\n' | sed '/^$/d' | ${MENU_CMD} ${MENU_ARG})"
+ROFI_SELECTION="$(lpass ls --format '•%an' | grep '•' | tr '•' '\n' | sed '/^$/d' | ${MENU_CMD} ${MENU_ARGS[@]})"
 
 if [ -z "${ROFI_SELECTION}" ]; then
     exit
