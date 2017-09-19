@@ -24,7 +24,7 @@
 ################################################################################
 
 MENU_CMD="rofi"
-MENU_ARGS=( -dmenu )
+MENU_ARGS=( -dmenu -width -168 )
 CLIP_CMD="xclip"
 CLIP_ARGS=( -selection clipboard )
 XTERM_CMD="termite"
